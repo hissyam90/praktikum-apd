@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2509106092_AntungHissyam_C1-25"/>
+        <attribute name="authors" value="Acer"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-13 08:59:28 PM"/>
+        <attribute name="created" value="QWNlcjtMQVBUT1AtRUtLQU9JT0E7MjAyNS0wOS0xMzswODoxODo0NSBQTTsyNzYw"/>
+        <attribute name="edited" value="QWNlcjtMQVBUT1AtRUtLQU9JT0E7MjAyNS0wOS0xMzswODo1OToyOCBQTTsxOzI4NzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lama" type="Integer" array="False" size=""/>
+            <declare name="tax" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukkan lama parkir (jam): &quot;" newline="True"/>
+            <input variable="lama"/>
+            <if expression="lama &lt;= 2">
+                <then>
+                    <assign variable="tax" expression="5000"/>
+                </then>
+                <else>
+                    <assign variable="tax" expression="5000+(lama-2)*2000"/>
+                </else>
+            </if>
+            <if expression="tax&gt;20000">
+                <then>
+                    <assign variable="tax" expression="20000"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;fanum tax ppn bea cukai parkir&quot;" newline="True"/>
+            <output expression="tax" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
