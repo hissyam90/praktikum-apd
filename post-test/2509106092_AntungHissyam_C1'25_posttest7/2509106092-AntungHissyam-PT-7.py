@@ -1,5 +1,5 @@
 # variabel global
-pengguna = {"admin": {"password": "123456789012345", "role": "admin"}}
+pengguna = {}
 pegawai = {}
 login = None
 
